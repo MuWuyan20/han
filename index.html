@@ -266,5 +266,19 @@
     <script src="./js//lovetime.js"></script>
     <script>resize();</script>
 </body>
+<!--禁止右键-->
+<script language="Javascript">
+document.oncontextmenu=new Function("event.returnValue=false");
+document.onselectstart=new Function("event.returnValue=false");
+</script>
+
+<!--禁止F12-->
+<script type="text/javascript">document.onkeydown = function () {
+if (window.event && window.event.keyCode == 123) {
+event.keyCode = 0;
+event.returnValue = false;
+return false;
+}};
+</script>
 
 </html>
